@@ -7,14 +7,12 @@ def kangaroo(x1, v1, x2, v2):
         return 'NO'
     
     idx = 0
-    a1 = x1
-    a2 = x2
     
     while idx <= 10000:
-        a1 = a1 + v1
-        a2 = a2 + v2
+        x1 = x1 + v1
+        x2 = x2 + v2
         
-        if a1 == a2:
+        if x1 == x2:
             return 'YES'
         
         idx = idx + 1
